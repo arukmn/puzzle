@@ -12,7 +12,7 @@ e.g.) 351 => 3 * 51 = 153
 気をつけるのは
 * 0の計算
 * 掛け算、割り算
- */
+*/
 String.prototype.reverse = function() {
   return this.split('').reverse().join('')
 }
@@ -51,3 +51,11 @@ function valid(target) {
     }
   }
 }
+
+
+/*
+今回のオチ
+固定できるところは何処なのか、動的に変更しなければならないのはどこなのか
+ココをはっきりさせるだけで変数に置くのか置かないのかハッキリさせることが出来る。
+あとは、Stringの標準APIのcharAtぇぇぇ
+ */
