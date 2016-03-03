@@ -1,5 +1,4 @@
 'use strict';
-
 class InsideOutGame {
   private MAX: number;
   private cards: boolean[];

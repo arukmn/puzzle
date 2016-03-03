@@ -33,7 +33,11 @@
   "files": [
     "./krrn.ts",
     "./q03-re.ts",
-    "./q04.ts"
+    "./q04.ts",
+    "./q05.ts",
+    "./q06.ts",
+    "./q07.ts",
+    "./q08.ts"
   ],
   "atom": {
     "rewriteTsconfig": true
