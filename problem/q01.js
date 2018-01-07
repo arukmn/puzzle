@@ -1,7 +1,7 @@
 const reverse = str => str.split('').reverse().join('')
 
-  // 左が必ず1にならないと行けない
-  // よって右端も1でなければならない = 奇数である
+// 左が必ず1にならないと行けない
+// よって右端も1でなければならない = 奇数である
 module.exports = () => {
   // 10以上の奇数
   const initial = 11
