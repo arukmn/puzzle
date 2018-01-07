@@ -1,0 +1,34 @@
+{
+  "name": "puzzle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "lint": "eslint problem --ext .js",
+    "precommit": "yarn lint",
+    "test": "yarn lint && jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koolii/puzzle.git"
+  },
+  "author": "koolii",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/koolii/puzzle/issues"
+  },
+  "homepage": "https://github.com/koolii/puzzle#readme",
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "jest": "^22.0.4"
+  },
+  "dependencies": {
+    "husky": "^0.14.3"
+  }
+}
