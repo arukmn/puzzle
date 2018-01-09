@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1515528382810" clover="3.2.0">
-  <project timestamp="1515528382812" name="All files">
-    <metrics statements="9" coveredstatements="9" conditionals="5" coveredconditionals="5" methods="2" coveredmethods="2" elements="16" coveredelements="16" complexity="0" loc="9" ncloc="9" packages="1" files="1" classes="1">
+<coverage generated="1515531074081" clover="3.2.0">
+  <project timestamp="1515531074081" name="All files">
+    <metrics statements="28" coveredstatements="27" conditionals="11" coveredconditionals="11" methods="3" coveredmethods="3" elements="42" coveredelements="41" complexity="0" loc="28" ncloc="28" packages="1" files="2" classes="2">
       <file name="q01.js" path="/Users/koolii/work/puzzle/problem/01/javascript/q01.js">
         <metrics statements="9" coveredstatements="9" conditionals="5" coveredconditionals="5" methods="2" coveredmethods="2"/>
         <line num="1" count="326" type="stmt"/>
@@ -13,6 +13,28 @@
         <line num="12" count="288" type="stmt"/>
         <line num="15" count="288" type="cond" truecount="5" falsecount="0"/>
         <line num="18" count="1" type="stmt"/>
+      </file>
+      <file name="q02.js" path="/Users/koolii/work/puzzle/problem/01/javascript/q02.js">
+        <metrics statements="19" coveredstatements="18" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="396" type="stmt"/>
+        <line num="9" count="396" type="stmt"/>
+        <line num="10" count="1978" type="stmt"/>
+        <line num="11" count="9888" type="stmt"/>
+        <line num="12" count="49440" type="stmt"/>
+        <line num="13" count="49440" type="stmt"/>
+        <line num="14" count="49440" type="stmt"/>
+        <line num="16" count="49440" type="stmt"/>
+        <line num="17" count="49440" type="stmt"/>
+        <line num="19" count="49440" type="stmt"/>
+        <line num="20" count="49440" type="stmt"/>
+        <line num="22" count="49440" type="cond" truecount="2" falsecount="0"/>
+        <line num="23" count="49045" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
       </file>
     </metrics>
   </project>

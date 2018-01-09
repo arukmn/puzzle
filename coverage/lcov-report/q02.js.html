@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for q01.js</title>
+    <title>Code coverage report for q02.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -16,28 +16,28 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="index.html">All files</a> q01.js
+      <a href="index.html">All files</a> q02.js
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">94.74% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>10/10</span>
+        <span class='fraction'>18/19</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>5/5</span>
+        <span class='fraction'>6/6</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>2/2</span>
+        <span class='fraction'>1/1</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">94.74% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>9/9</span>
+        <span class='fraction'>18/19</span>
       </div>
     </div>
   </div>
@@ -64,47 +64,83 @@
 19
 20
 21
-22</td><td class="line-coverage quiet"><span class="cline-any cline-yes">326x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">288x</span>
-<span class="cline-any cline-yes">288x</span>
-<span class="cline-any cline-yes">288x</span>
+<span class="cline-any cline-yes">396x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">396x</span>
+<span class="cline-any cline-yes">1978x</span>
+<span class="cline-any cline-yes">9888x</span>
+<span class="cline-any cline-yes">49440x</span>
+<span class="cline-any cline-yes">49440x</span>
+<span class="cline-any cline-yes">49440x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">288x</span>
+<span class="cline-any cline-yes">49440x</span>
+<span class="cline-any cline-yes">49440x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">49440x</span>
+<span class="cline-any cline-yes">49440x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">49440x</span>
+<span class="cline-any cline-yes">49045x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const reverse = str =&gt; str.split('').reverse().join('')
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/* eslint-disable no-eval */
+const ope = ['+', '-', '*', '/', '']
+const opeLen = ope.length
 &nbsp;
-// 左が必ず1にならないと行けない
-// よって右端も1でなければならない = 奇数である
-module.exports = () =&gt; {
-  // 10以上の奇数
-  const initial = 11
+module.exports = (init = 1000, end = 10000) =&gt; {
+  for (let i = init; i &lt; end; i += 1) {
+    const nums = String(i).split('')
 &nbsp;
-  for (let num = initial; ; num += 2) {
-    const str10 = num.toString()
-    const str8 = num.toString(8)
-    const str2 = num.toString(2)
+    for (let j = 0; j &lt; opeLen; j += 1) {
+      for (let k = 0; k &lt; opeLen; k += 1) {
+        for (let l = 0; l &lt; opeLen; l += 1) {
+          let equation = nums[3]
+          equation += ope[j]
+          equation += nums[2]
 &nbsp;
-    // 全ての基数の文字列が逆順と同一である
-    if (str10 === reverse(str10)
-    &amp;&amp; str8 === reverse(str8)
-    &amp;&amp; str2 === reverse(str2)) {
-      return num
+          equation += ope[k]
+          equation += nums[1]
+&nbsp;
+          equation += ope[l]
+          equation += nums[0]
+&nbsp;
+          if (equation.length &gt; 4) {
+            if (i === eval(equation)) {
+              return parseInt(nums.reverse().join(''), 10)
+            }
+          }
+        }
+      }
     }
   }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  return -1</span>
 }
 &nbsp;</pre></td></tr>
 </table></pre>
